@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var selectedRoute = GlobalVariabels().chosedRoute
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+//        VStack {
+//            Image(systemName: "globe")
+//                .imageScale(.large)
+//                .foregroundColor(.accentColor)
+//            Text("Hello, world!")
+//        }
+//        .padding()
+        MapView()
+//        MapView(selectedRoute: $selectedRoute)
     }
 }
 

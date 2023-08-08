@@ -7,15 +7,22 @@
 
 import SwiftUI
 
+//var selectedRoute = GlobalVariabels()
+
 struct ContentView: View {
+    @State var selectedRoute = GlobalVariabels().chosedRoute
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+//        VStack {
+//            Image(systemName: "globe")
+//                .imageScale(.large)
+//                .foregroundColor(.accentColor)
+//            Text("Hello, world!")
+//        }
+//        .padding()
+        ZStack{
+            MapView(selectedRoute: $selectedRoute)
+            ChoseButtonView(selectedRoute: $selectedRoute)
         }
-        .padding()
     }
 }
 
