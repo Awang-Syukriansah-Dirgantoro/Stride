@@ -19,6 +19,7 @@ struct Location: Identifiable {
 struct checkPoint: Identifiable {
     let id: Int
     let coordinate: CLLocationCoordinate2D
+//    let direction: String
 }
 
 class Locations: ObservableObject {

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ChoseButtonComponent: View {
+struct ArrowButtonComponent: View {
     var body: some View {
         Rectangle()
             .foregroundColor(.clear)
@@ -23,8 +23,8 @@ struct ChoseButtonComponent: View {
     }
 }
 
-struct ChoseButtonComponent_Previews: PreviewProvider {
+struct ArrowButtonComponent_Previews: PreviewProvider {
     static var previews: some View {
-        ChoseButtonComponent()
+        ArrowButtonComponent()
     }
 }

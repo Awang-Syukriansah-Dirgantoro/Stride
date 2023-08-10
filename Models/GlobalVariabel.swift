@@ -6,7 +6,10 @@
 //
 
 import Foundation
+import MapKit
 
 class GlobalVariabels: ObservableObject {
     @Published var chosedRoute: Int = 0
+    @Published var isChosed: Bool = false
+    @Published var routeCoordinate = [checkPoint]()
 }

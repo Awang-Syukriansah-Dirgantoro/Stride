@@ -25,7 +25,7 @@ struct ChoseButtonView: View {
                 name = mapList.items[selectedRoute].name
                 print("masuk sini \(selectedRoute)")
             } label: {
-                ChoseButtonComponent()
+                ArrowButtonComponent()
                     .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
                     .offset(x: -animated)
             }
@@ -40,7 +40,7 @@ struct ChoseButtonView: View {
                 }
                 name = mapList.items[selectedRoute].name
             } label: {
-                ChoseButtonComponent()
+                ArrowButtonComponent()
                     .offset(x: animated)
             }
         }.task {

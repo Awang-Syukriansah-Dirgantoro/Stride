@@ -114,6 +114,6 @@ struct MapView: View {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(selectedRoute: .constant(0))
+        MapView(selectedRoute: .constant(1))
     }
 }

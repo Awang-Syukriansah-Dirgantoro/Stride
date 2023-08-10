@@ -22,12 +22,16 @@
 		593C137E2A79F0990008945E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C137D2A79F0990008945E /* MapView.swift */; };
 		593C137F2A79F3660008945E /* RouteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C13772A79B6160008945E /* RouteList.swift */; };
 		593C13842A7C5B680008945E /* RealTimeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C13832A7C5B680008945E /* RealTimeLocation.swift */; };
+		59704EEA2A847B0500257BDA /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59704EE92A847B0500257BDA /* Controller.swift */; };
 		59F3A26F2A7E7C8C00491709 /* GlobalVariabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3A26E2A7E7C8C00491709 /* GlobalVariabel.swift */; };
 		59F3A2702A7E7C8C00491709 /* GlobalVariabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3A26E2A7E7C8C00491709 /* GlobalVariabel.swift */; };
-		59F3A2722A7E7E2900491709 /* ChoseButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3A2712A7E7E2900491709 /* ChoseButtonComponent.swift */; };
-		59F3A2752A7E7F6C00491709 /* ChoseButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3A2742A7E7F6C00491709 /* ChoseButtonView.swift */; };
+		59F3A2722A7E7E2900491709 /* ArrowButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3A2712A7E7E2900491709 /* ArrowButtonComponent.swift */; };
+		59F3A2752A7E7F6C00491709 /* ChoseRouteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3A2742A7E7F6C00491709 /* ChoseRouteButtonView.swift */; };
 		59F3A2782A7FBA9C00491709 /* HealthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3A2772A7FBA9C00491709 /* HealthController.swift */; };
 		59F3A2792A7FBA9C00491709 /* HealthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3A2772A7FBA9C00491709 /* HealthController.swift */; };
+		59F3A2832A81DA6A00491709 /* StartButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3A2822A81DA6A00491709 /* StartButtonComponent.swift */; };
+		59F3A2872A83242000491709 /* WatchConnectivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3A2862A83242000491709 /* WatchConnectivityController.swift */; };
+		59F3A2882A83242000491709 /* WatchConnectivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3A2862A83242000491709 /* WatchConnectivityController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,12 +94,15 @@
 		593C137B2A79B6650008945E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		593C137D2A79F0990008945E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		593C13832A7C5B680008945E /* RealTimeLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeLocation.swift; sourceTree = "<group>"; };
+		59704EE92A847B0500257BDA /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		59F3A26E2A7E7C8C00491709 /* GlobalVariabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariabel.swift; sourceTree = "<group>"; };
-		59F3A2712A7E7E2900491709 /* ChoseButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoseButtonComponent.swift; sourceTree = "<group>"; };
-		59F3A2742A7E7F6C00491709 /* ChoseButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoseButtonView.swift; sourceTree = "<group>"; };
+		59F3A2712A7E7E2900491709 /* ArrowButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowButtonComponent.swift; sourceTree = "<group>"; };
+		59F3A2742A7E7F6C00491709 /* ChoseRouteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoseRouteButtonView.swift; sourceTree = "<group>"; };
 		59F3A2762A7FB85500491709 /* Stride Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Stride Watch App.entitlements"; sourceTree = "<group>"; };
 		59F3A2772A7FBA9C00491709 /* HealthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthController.swift; sourceTree = "<group>"; };
 		59F3A27B2A8074AB00491709 /* Stride-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Stride-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		59F3A2822A81DA6A00491709 /* StartButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonComponent.swift; sourceTree = "<group>"; };
+		59F3A2862A83242000491709 /* WatchConnectivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +167,7 @@
 		593C135F2A79325D0008945E /* Stride Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				59F3A27E2A81DA0500491709 /* Component */,
 				59F3A27B2A8074AB00491709 /* Stride-Watch-App-Info.plist */,
 				59F3A2762A7FB85500491709 /* Stride Watch App.entitlements */,
 				593C13732A79B5A60008945E /* Views */,
@@ -167,6 +175,7 @@
 				593C13622A79325D0008945E /* ContentView.swift */,
 				593C13642A79325E0008945E /* Assets.xcassets */,
 				593C13662A79325E0008945E /* Preview Content */,
+				59704EE92A847B0500257BDA /* Controller.swift */,
 			);
 			path = "Stride Watch App";
 			sourceTree = "<group>";
@@ -183,7 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				593C137B2A79B6650008945E /* MapView.swift */,
-				59F3A2742A7E7F6C00491709 /* ChoseButtonView.swift */,
+				59F3A2742A7E7F6C00491709 /* ChoseRouteButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,6 +211,7 @@
 				593C13792A79B6410008945E /* DrawPath.swift */,
 				593C13832A7C5B680008945E /* RealTimeLocation.swift */,
 				59F3A2772A7FBA9C00491709 /* HealthController.swift */,
+				59F3A2862A83242000491709 /* WatchConnectivityController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -218,7 +228,15 @@
 		59F3A2732A7E7E3B00491709 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				59F3A2712A7E7E2900491709 /* ChoseButtonComponent.swift */,
+				59F3A2712A7E7E2900491709 /* ArrowButtonComponent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		59F3A27E2A81DA0500491709 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				59F3A2822A81DA6A00491709 /* StartButtonComponent.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -327,10 +345,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59F3A2722A7E7E2900491709 /* ChoseButtonComponent.swift in Sources */,
+				59F3A2722A7E7E2900491709 /* ArrowButtonComponent.swift in Sources */,
 				59F3A2782A7FBA9C00491709 /* HealthController.swift in Sources */,
-				59F3A2752A7E7F6C00491709 /* ChoseButtonView.swift in Sources */,
+				59F3A2752A7E7F6C00491709 /* ChoseRouteButtonView.swift in Sources */,
 				59F3A26F2A7E7C8C00491709 /* GlobalVariabel.swift in Sources */,
+				59F3A2872A83242000491709 /* WatchConnectivityController.swift in Sources */,
 				593C137A2A79B6410008945E /* DrawPath.swift in Sources */,
 				593C13782A79B6160008945E /* RouteList.swift in Sources */,
 				593C137C2A79B6650008945E /* MapView.swift in Sources */,
@@ -345,7 +364,10 @@
 			files = (
 				59F3A2702A7E7C8C00491709 /* GlobalVariabel.swift in Sources */,
 				593C13632A79325D0008945E /* ContentView.swift in Sources */,
+				59F3A2882A83242000491709 /* WatchConnectivityController.swift in Sources */,
+				59F3A2832A81DA6A00491709 /* StartButtonComponent.swift in Sources */,
 				59F3A2792A7FBA9C00491709 /* HealthController.swift in Sources */,
+				59704EEA2A847B0500257BDA /* Controller.swift in Sources */,
 				593C13842A7C5B680008945E /* RealTimeLocation.swift in Sources */,
 				593C137F2A79F3660008945E /* RouteList.swift in Sources */,
 				593C137E2A79F0990008945E /* MapView.swift in Sources */,

@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import WatchConnectivity
 
 //var selectedRoute = GlobalVariabels()
 
 struct ContentView: View {
-    @State var selectedRoute = GlobalVariabels().chosedRoute
+    var connectivity = WatchProvider()
+    @State var selectedRoute = GlobalVariabels()
+//    @State var conectivity = WatchProvider.self
     var body: some View {
 //        VStack {
 //            Image(systemName: "globe")
@@ -20,8 +23,15 @@ struct ContentView: View {
 //        }
 //        .padding()
         ZStack{
-            MapView(selectedRoute: $selectedRoute)
-            ChoseButtonView(selectedRoute: $selectedRoute)
+            MapView(selectedRoute: $selectedRoute.chosedRoute)
+            VStack{
+                ChoseButtonView(selectedRoute: $selectedRoute.chosedRoute)
+                Button{
+                    connectivity.send(variabel: ["message":selectedRoute])
+                } label: {
+                    ArrowButtonComponent()
+                }
+            }
         }
     }
 }
