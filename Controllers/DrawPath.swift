@@ -10,21 +10,21 @@ import SwiftUI
 import MapKit
 
 struct MyMapView: UIViewRepresentable {
-    
-    var mapList = Locations()
-    
     @Binding var requestLocation: CLLocationCoordinate2D
     @Binding var destinationLocation: CLLocationCoordinate2D
     
     private let mapView = WrappableMapView()
     
     func makeUIView(context: UIViewRepresentableContext<MyMapView>) -> WrappableMapView {
+        mapView.removeAnnotations(mapView.annotations)
+        mapView.removeOverlays(mapView.overlays)
         mapView.delegate = mapView
         return mapView
     }
     
     func updateUIView(_ uiView: WrappableMapView, context: UIViewRepresentableContext<MyMapView>) {
-        
+        uiView.removeAnnotations(uiView.annotations)
+        uiView.removeOverlays(uiView.overlays)
         let requestAnnotation = MKPointAnnotation()
         requestAnnotation.coordinate = requestLocation
         requestAnnotation.title = "Start"
@@ -63,7 +63,9 @@ struct MyMapView: UIViewRepresentable {
     }
     
     func setMapRegion(_ region: CLLocationCoordinate2D){
-        mapView.region = MKCoordinateRegion(center: region, latitudinalMeters: 600000, longitudinalMeters: 600000)
+        mapView.removeAnnotations(mapView.annotations)
+        mapView.removeOverlays(mapView.overlays)
+        mapView.region = MKCoordinateRegion(center: region, latitudinalMeters: 0.007, longitudinalMeters: 0.007)
     }
     
     
@@ -72,8 +74,10 @@ struct MyMapView: UIViewRepresentable {
 class WrappableMapView: MKMapView, MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+//        mapView.removeAnnotations(mapView.annotations)
+//        mapView.removeOverlays(mapView.overlays)
         let renderer = MKPolylineRenderer(overlay: overlay)
-        renderer.strokeColor = getRandomColor()
+//        renderer.strokeColor = getRandomColor()
         renderer.lineWidth = 4.0
         return renderer
     }

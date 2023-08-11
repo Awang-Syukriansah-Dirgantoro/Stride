@@ -13,12 +13,13 @@ import CoreLocation
 struct MapView: View {
     var mapList = Locations()
     private let locationManagers = CLLocationManager()
-    @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: -7.281262, longitude: 112.630631), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
+    @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: -7.281262, longitude: 112.630631), span: MKCoordinateSpan(latitudeDelta: 0.007, longitudeDelta: 0.007))
+//    @State private var mapCamera = MKMapCamera(lookingAtCenter: CLLocationCoordinate2D(latitude: -7.281262, longitude: 112.630631), from: 7500, pitch: 0, heading: 90)
     @State var requestLocation = CLLocationCoordinate2D(latitude: 0, longitude:  0)
     @State var destinationLocation = CLLocationCoordinate2D(latitude: 0, longitude: 0)
     @State var distances = 0.0
     @State var totalRoute = 0
-    @State var selectedRoute = 1
+    @Binding var selectedRoute: GlobalVariabels
     var body: some View {
         ZStack{
             ///MAP WITH CUSTOM POINT
@@ -41,9 +42,9 @@ struct MapView: View {
         }.ignoresSafeArea()
             .task {
                 totalRoute = mapList.items.count
-                requestLocation = mapList.items[selectedRoute].startCoordinate
-                destinationLocation = mapList.items[selectedRoute].finisCoordinate
-                distances = CLLocation(latitude: mapList.items[selectedRoute].finisCoordinate.latitude, longitude: mapList.items[selectedRoute].finisCoordinate.longitude).distance(from: CLLocation(latitude: mapList.items[selectedRoute].startCoordinate.latitude, longitude: mapList.items[selectedRoute].startCoordinate.longitude))
+                requestLocation = mapList.items[selectedRoute.chosedRoute].startCoordinate
+                destinationLocation = mapList.items[selectedRoute.chosedRoute].finisCoordinate
+                distances = CLLocation(latitude: mapList.items[selectedRoute.chosedRoute].finisCoordinate.latitude, longitude: mapList.items[selectedRoute.chosedRoute].finisCoordinate.longitude).distance(from: CLLocation(latitude: mapList.items[selectedRoute.chosedRoute].startCoordinate.latitude, longitude: mapList.items[selectedRoute.chosedRoute].startCoordinate.longitude))
                 //                print(distances)
             }
     }
@@ -51,6 +52,6 @@ struct MapView: View {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
+        MapView(selectedRoute: .constant(GlobalVariabels()))
     }
 }

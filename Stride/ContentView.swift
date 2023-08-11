@@ -12,7 +12,7 @@ import WatchConnectivity
 
 struct ContentView: View {
     var connectivity = WatchProvider()
-    @State var selectedRoute = GlobalVariabels()
+    @StateObject var selectedRoute = GlobalVariabels()
 //    @State var conectivity = WatchProvider.self
     var body: some View {
 //        VStack {
@@ -27,7 +27,12 @@ struct ContentView: View {
             VStack{
                 ChoseButtonView(selectedRoute: $selectedRoute.chosedRoute)
                 Button{
-                    connectivity.send(variabel: ["message":selectedRoute])
+                    selectedRoute.isChosed = true
+                    connectivity.send(variabel: [
+                        "route": selectedRoute.chosedRoute,
+                        "chosed": selectedRoute.isChosed,
+                        "list": selectedRoute.routeCoordinate
+                    ])
                 } label: {
                     ArrowButtonComponent()
                 }

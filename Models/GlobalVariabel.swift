@@ -8,8 +8,14 @@
 import Foundation
 import MapKit
 
+struct routePoint: Identifiable {
+    let id: Int
+    let coordinate: CLLocationCoordinate2D
+//    let direction: String
+}
+
 class GlobalVariabels: ObservableObject {
     @Published var chosedRoute: Int = 0
     @Published var isChosed: Bool = false
-    @Published var routeCoordinate = [checkPoint]()
+    @Published var routeCoordinate = [routePoint]()
 }

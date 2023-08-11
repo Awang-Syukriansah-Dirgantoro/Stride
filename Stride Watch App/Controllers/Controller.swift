@@ -1,18 +1,18 @@
 //
-//  WatchConnectivityController.swift
-//  Stride
+//  Controller.swift
+//  Stride Watch App
 //
-//  Created by Awang Syukriansah Dirgantoro on 09/08/23.
+//  Created by Awang Syukriansah Dirgantoro on 10/08/23.
 //
 
 import Foundation
 import WatchConnectivity
 
-class WatchProvider: NSObject, WCSessionDelegate, ObservableObject{
+class Controller: NSObject, WCSessionDelegate, ObservableObject{
     
     var session: WCSession
     @Published var globalVariabel: GlobalVariabels
-    @Published var globalVariabels: String
+    @Published var globalVariabels: String = "haha"
     
     init(session: WCSession = .default) {
         self.session = session
@@ -59,21 +59,17 @@ class WatchProvider: NSObject, WCSessionDelegate, ObservableObject{
             print("Not Reachable")
         }
     }
-#if os(iOS)
-    func sessionDidBecomeInactive(_ session: WCSession) {
-        print("oke")
-    }
     
-    func sessionDidDeactivate(_ session: WCSession) {
-        print("oke")
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+//        print(message["coba"] ?? "yolo")
+        print("masuk receive")
+        DispatchQueue.main.async {
+            self.globalVariabel.chosedRoute = message["route"] as? Int ?? self.globalVariabel.chosedRoute
+            self.globalVariabel.isChosed = message["chosed"] as? Bool ?? self.globalVariabel.isChosed
+            self.globalVariabel.routeCoordinate = message["list"] as? [routePoint] ?? self.globalVariabel.routeCoordinate
+        }
+        print("\(globalVariabel.chosedRoute)")
+        print("\(globalVariabel.isChosed)")
     }
-#endif
-//    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
-////        print(message["coba"] ?? "yolo")
-//        print("masuk receive")
-//        DispatchQueue.main.async {
-//            self.globalVariabels = message["message"] as? String ?? "Yolo"
-//        }
-//    }
     
 }
