@@ -23,21 +23,38 @@ struct ContentView: View {
 //        }
 //        .padding()
         ZStack{
-            MapView(selectedRoute: $selectedRoute.chosedRoute)
             VStack{
-                ChoseButtonView(selectedRoute: $selectedRoute.chosedRoute)
-                Button{
-                    selectedRoute.isChosed = true
-                    connectivity.send(variabel: [
-                        "route": selectedRoute.chosedRoute,
-                        "chosed": selectedRoute.isChosed,
-                        "list": selectedRoute.routeCoordinate
-                    ])
-                } label: {
-                    ArrowButtonComponent()
+                ZStack(alignment: .bottom){
+                    MapView(selectedRoute: $selectedRoute.chosedRoute)
+                    ChoseButtonView(selectedRoute: $selectedRoute.chosedRoute)
                 }
+                ZStack(alignment: .top){
+                    Image("Background")
+                        .resizable()
+                        .frame(height: 200)
+                        .scaledToFill()
+                        .ignoresSafeArea(.all)
+                    VStack{
+                        Button{
+                            selectedRoute.isChosed = true
+                            connectivity.send(variabel: [
+                                "route": selectedRoute.chosedRoute,
+                                "chosed": selectedRoute.isChosed,
+                                "list": selectedRoute.routeCoordinate
+                            ])
+                        } label: {
+                            Rectangle()
+                                .frame(width: 200, height: 50)
+                                .overlay{
+                                    Text("Chosed")
+                                }
+                        }
+                    }.padding()
+                }
+//                .frame(height: 200)
             }
         }
+        .ignoresSafeArea(.all)
     }
 }
 

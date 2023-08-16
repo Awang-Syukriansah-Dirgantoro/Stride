@@ -17,6 +17,7 @@ struct MapView: View {
     @State var destinationLocation = CLLocationCoordinate2D(latitude: 0, longitude: 0)
     @State var distances = 0.0
     @State var totalRoute = 0
+    @State var route = [checkPoint]()
     //        @State var selectedRoute = 1
     @Binding var selectedRoute: Int
     
@@ -25,7 +26,8 @@ struct MapView: View {
     func updateRoute() {
         requestLocation = mapList.items[selectedRoute].startCoordinate
         destinationLocation = mapList.items[selectedRoute].finisCoordinate
-//        print(requestLocation)
+        route = mapList.items[selectedRoute].checkPointCoordinate
+        print(route)
         distances = CLLocation(latitude: mapList.items[selectedRoute].finisCoordinate.latitude, longitude: mapList.items[selectedRoute].finisCoordinate.longitude).distance(from: CLLocation(latitude: mapList.items[selectedRoute].startCoordinate.latitude, longitude: mapList.items[selectedRoute].startCoordinate.longitude))
     }
     
@@ -55,11 +57,12 @@ struct MapView: View {
         
         ///MAP WITH ROUTE
         //                VStack{
-        MyMapView(requestLocation: $requestLocation,
-                  //                                  requestLocation2:$requestLocation2,
-                  destinationLocation: $destinationLocation
-                  //                                  destination2: $destination2
-        )
+        MapWithRouteView(checkpoints: $route)
+//        MyMapView(requestLocation: $requestLocation,
+//                  //                                  requestLocation2:$requestLocation2,
+//                  destinationLocation: $destinationLocation
+//                  //                                  destination2: $destination2
+//        )
         .edgesIgnoringSafeArea(.all)
         //                }
         //                VStack{
@@ -114,6 +117,6 @@ struct MapView: View {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(selectedRoute: .constant(1))
+        MapView(selectedRoute: .constant(2))
     }
 }

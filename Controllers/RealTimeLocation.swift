@@ -14,6 +14,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     private let locationManager = CLLocationManager()
     @Published var locationStatus: CLAuthorizationStatus?
     @Published var lastLocation: CLLocation?
+    @Published var speed: Double?
     
     override init() {
         super.init()
@@ -47,6 +48,16 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         guard let location = locations.last else { return }
         lastLocation = location
         print(#function, location)
+        
+        guard let speeds = manager.location?.speed else { return }
+        speed = speeds * 3.6
+        print(#function, speeds)
     }
+    
+//    func locationManager(_ manager: CLLocationManager, didUpdateSpeed speeds: CLLocationSpeedAccuracy) {
+////        guard let location = locations.last else { return }
+//        speed = speeds
+//        print(#function, speeds)
+//    }
 }
 

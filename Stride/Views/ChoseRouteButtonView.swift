@@ -31,6 +31,7 @@ struct ChoseButtonView: View {
             }
             Spacer()
             Text(name)
+//                .foregroundColor(.white)
             Spacer()
             Button{
                 if selectedRoute + 1 == totalRoute {

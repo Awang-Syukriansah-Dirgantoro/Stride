@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5916BC7D2A8B036A00D6A6FC /* DirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5916BC7C2A8B036A00D6A6FC /* DirectionView.swift */; };
+		5916BC7F2A8B059A00D6A6FC /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5916BC7E2A8B059A00D6A6FC /* ColorModel.swift */; };
+		5916BC802A8B059A00D6A6FC /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5916BC7E2A8B059A00D6A6FC /* ColorModel.swift */; };
+		5916BC822A8BB06600D6A6FC /* MiniHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5916BC812A8BB06600D6A6FC /* MiniHealthView.swift */; };
+		5916BC832A8BB06600D6A6FC /* MiniHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5916BC812A8BB06600D6A6FC /* MiniHealthView.swift */; };
+		5916BC852A8BB18600D6A6FC /* MiniTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5916BC842A8BB18600D6A6FC /* MiniTimerView.swift */; };
+		5916BC862A8BB18600D6A6FC /* MiniTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5916BC842A8BB18600D6A6FC /* MiniTimerView.swift */; };
 		593C134F2A79325C0008945E /* StrideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C134E2A79325C0008945E /* StrideApp.swift */; };
 		593C13512A79325C0008945E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C13502A79325C0008945E /* ContentView.swift */; };
 		593C13532A79325D0008945E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593C13522A79325D0008945E /* Assets.xcassets */; };
@@ -23,6 +30,9 @@
 		593C137F2A79F3660008945E /* RouteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C13772A79B6160008945E /* RouteList.swift */; };
 		593C13842A7C5B680008945E /* RealTimeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C13832A7C5B680008945E /* RealTimeLocation.swift */; };
 		59704EEA2A847B0500257BDA /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59704EE92A847B0500257BDA /* Controller.swift */; };
+		59704EEE2A88BAA900257BDA /* DrawPathNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59704EED2A88BAA900257BDA /* DrawPathNew.swift */; };
+		59704EF02A89C86500257BDA /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59704EEF2A89C86500257BDA /* HealthView.swift */; };
+		59704EF22A8A1D5000257BDA /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59704EF12A8A1D5000257BDA /* TimerView.swift */; };
 		59F3A26F2A7E7C8C00491709 /* GlobalVariabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3A26E2A7E7C8C00491709 /* GlobalVariabel.swift */; };
 		59F3A2702A7E7C8C00491709 /* GlobalVariabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3A26E2A7E7C8C00491709 /* GlobalVariabel.swift */; };
 		59F3A2722A7E7E2900491709 /* ArrowButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3A2712A7E7E2900491709 /* ArrowButtonComponent.swift */; };
@@ -78,6 +88,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5916BC7C2A8B036A00D6A6FC /* DirectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionView.swift; sourceTree = "<group>"; };
+		5916BC7E2A8B059A00D6A6FC /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
+		5916BC812A8BB06600D6A6FC /* MiniHealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniHealthView.swift; sourceTree = "<group>"; };
+		5916BC842A8BB18600D6A6FC /* MiniTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniTimerView.swift; sourceTree = "<group>"; };
 		593C134B2A79325C0008945E /* Stride.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stride.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		593C134E2A79325C0008945E /* StrideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrideApp.swift; sourceTree = "<group>"; };
 		593C13502A79325C0008945E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +108,9 @@
 		593C137D2A79F0990008945E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		593C13832A7C5B680008945E /* RealTimeLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeLocation.swift; sourceTree = "<group>"; };
 		59704EE92A847B0500257BDA /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		59704EED2A88BAA900257BDA /* DrawPathNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPathNew.swift; sourceTree = "<group>"; };
+		59704EEF2A89C86500257BDA /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
+		59704EF12A8A1D5000257BDA /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		59F3A26E2A7E7C8C00491709 /* GlobalVariabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariabel.swift; sourceTree = "<group>"; };
 		59F3A2712A7E7E2900491709 /* ArrowButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowButtonComponent.swift; sourceTree = "<group>"; };
 		59F3A2742A7E7F6C00491709 /* ChoseRouteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoseRouteButtonView.swift; sourceTree = "<group>"; };
@@ -201,6 +218,11 @@
 			isa = PBXGroup;
 			children = (
 				593C137D2A79F0990008945E /* MapView.swift */,
+				59704EEF2A89C86500257BDA /* HealthView.swift */,
+				59704EF12A8A1D5000257BDA /* TimerView.swift */,
+				5916BC7C2A8B036A00D6A6FC /* DirectionView.swift */,
+				5916BC812A8BB06600D6A6FC /* MiniHealthView.swift */,
+				5916BC842A8BB18600D6A6FC /* MiniTimerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,6 +233,7 @@
 				593C13792A79B6410008945E /* DrawPath.swift */,
 				593C13832A7C5B680008945E /* RealTimeLocation.swift */,
 				59F3A2772A7FBA9C00491709 /* HealthController.swift */,
+				59704EED2A88BAA900257BDA /* DrawPathNew.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -220,6 +243,7 @@
 			children = (
 				593C13772A79B6160008945E /* RouteList.swift */,
 				59F3A26E2A7E7C8C00491709 /* GlobalVariabel.swift */,
+				5916BC7E2A8B059A00D6A6FC /* ColorModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -360,16 +384,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59704EEE2A88BAA900257BDA /* DrawPathNew.swift in Sources */,
 				59F3A2722A7E7E2900491709 /* ArrowButtonComponent.swift in Sources */,
 				59F3A2782A7FBA9C00491709 /* HealthController.swift in Sources */,
 				59F3A2752A7E7F6C00491709 /* ChoseRouteButtonView.swift in Sources */,
 				59F3A26F2A7E7C8C00491709 /* GlobalVariabel.swift in Sources */,
 				59F3A2872A83242000491709 /* WatchConnectivityController.swift in Sources */,
 				593C137A2A79B6410008945E /* DrawPath.swift in Sources */,
+				5916BC822A8BB06600D6A6FC /* MiniHealthView.swift in Sources */,
 				593C13782A79B6160008945E /* RouteList.swift in Sources */,
 				593C137C2A79B6650008945E /* MapView.swift in Sources */,
 				593C13512A79325C0008945E /* ContentView.swift in Sources */,
 				593C134F2A79325C0008945E /* StrideApp.swift in Sources */,
+				5916BC7F2A8B059A00D6A6FC /* ColorModel.swift in Sources */,
+				5916BC852A8BB18600D6A6FC /* MiniTimerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,10 +409,16 @@
 				593C13632A79325D0008945E /* ContentView.swift in Sources */,
 				59F3A2832A81DA6A00491709 /* StartButtonComponent.swift in Sources */,
 				59F3A2792A7FBA9C00491709 /* HealthController.swift in Sources */,
+				5916BC862A8BB18600D6A6FC /* MiniTimerView.swift in Sources */,
 				59704EEA2A847B0500257BDA /* Controller.swift in Sources */,
 				593C13842A7C5B680008945E /* RealTimeLocation.swift in Sources */,
+				5916BC802A8B059A00D6A6FC /* ColorModel.swift in Sources */,
+				5916BC7D2A8B036A00D6A6FC /* DirectionView.swift in Sources */,
+				59704EF22A8A1D5000257BDA /* TimerView.swift in Sources */,
 				593C137F2A79F3660008945E /* RouteList.swift in Sources */,
 				593C137E2A79F0990008945E /* MapView.swift in Sources */,
+				5916BC832A8BB06600D6A6FC /* MiniHealthView.swift in Sources */,
+				59704EF02A89C86500257BDA /* HealthView.swift in Sources */,
 				593C13612A79325D0008945E /* StrideApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +559,9 @@
 				INFOPLIST_FILE = "Stride-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Stride;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Juse das";
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = HalloBangHallo;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = HalloBangHallo;
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = HalloBangHallo;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Help me";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Awang hep";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -562,6 +599,9 @@
 				INFOPLIST_FILE = "Stride-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Stride;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Juse das";
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = HalloBangHallo;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = HalloBangHallo;
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = HalloBangHallo;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Help me";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Awang hep";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
